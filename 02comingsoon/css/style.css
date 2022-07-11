@@ -1,0 +1,57 @@
+:root {
+  --yellow: #ffbb30;
+  --black: #242424;
+  --grey: #818181;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--yellow);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  padding: 25px;
+}
+
+.text-container {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-container h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.text-container p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grey);
+  text-align: right;
+}
+
+.banner{
+  background-color: var(--white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
