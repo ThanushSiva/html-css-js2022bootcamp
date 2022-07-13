@@ -1,0 +1,148 @@
+:root {
+  --yellow: #ffbb30;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #c1c1c1;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex: 1;
+}
+
+.col {
+  position: relative;
+}
+
+.col1 {
+  flex: 0.5;
+}
+
+.col2 {
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20vh;
+}
+
+.blob {
+  position: absolute;
+  height: 500px;
+  z-index: -1;
+}
+
+.img-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile {
+  height: 600px;
+}
+
+input,.btn {
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+}
+
+input[type="email"],.btn{
+  width: 491px;
+}
+
+.btn{
+  color: #fff;
+}
+
+.or{
+  margin-top: 10px;
+  display: block;
+  width: 491px;
+  text-align: center;
+}
+
+h1{
+  color: rgba(29, 26, 26, 0.942);
+}
+.acc{
+  background-color:#f5a401;
+}
+
+.fb{
+  background-color: darkblue;
+}
+
+.tw{
+  background-color: deepskyblue;
+}
+
+@media screen and (max-width: 1005px){
+  input{
+    width: 491px;
+  }
+}
+
+@media screen and (max-width: 810px){
+  .img-container{
+    display: none;
+  }
+  .col1{
+    display: none;
+  }
+  .col2{
+    flex: 1;
+    align-items: center;
+  }
+  input,.btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 590px){
+  .col2{
+    max-width: 400px;
+    margin: 20vh auto;
+  }
+  input,.btn {
+    max-width: 350px;
+  }
+  .blob {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .col2{
+    max-width: 400px;
+    margin: 20vh auto;
+  }
+  input,.btn {
+    max-width: 300px;
+  }
+  .blob {
+    height: 250px;
+  }
+}
